@@ -1,0 +1,20 @@
+*{box-sizing: border-box;}
+
+body{
+    background: rgb(134, 69, 39);
+    color: beige;
+}
+
+#submitBtn{
+    color: beige;
+    border-color: beige;
+}
+
+#submitBtn:hover{
+    color: rgb(134, 69, 39);
+    background: beige;
+}
+
+.item-info{
+    color: rgb(134, 69, 39);
+}
