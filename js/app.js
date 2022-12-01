@@ -16,6 +16,8 @@
  * Bonus points if you dont allows duplicate items.
  */
 
+let finalPrice = 0;
+
 class Shop{
     constructor(){
         this.shopArr = [];
@@ -26,6 +28,7 @@ class Shop{
         this.aisleInput = document.getElementById('aisle')
         this.priceInput = document.getElementById('price')
         this.displayArea = document.getElementById('displayArea')
+        this.finalPriceArea = document.getElementById('finalPrice')
     }
 
     init(){
@@ -67,6 +70,8 @@ class Shop{
             </div>
             `;
             this.shopArr.push(this.shopItemInput.value);
+            finalPrice += this.priceInput.value * this.qtyInput.value
+            finalPriceArea.innerText =`$${finalPrice}`;
         }
     }
 }
